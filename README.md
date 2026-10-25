@@ -39,23 +39,25 @@ The report contains four pages covering the following topics:
 3. Well Pollution Analysis — exploration of well pollution and contamination.
 4. Crime and Safety Analysis — exploration of crime and safety information in relation to water access.
 
+
 ## Dashboard Screenshots
 
 ### 1. Water Sources Overview
 
-![Water Sources Overview](images/water_sources_overview.png)
+![Water Sources Overview](Maji_Ndogo_P2_Water_Sources_Overview.png)
 
 ### 2. Queue Analysis
 
-![Queue Analysis](images/queue_analysis.png)
+![Queue Analysis](Maji_Ndogo_P2_Queue_Analysis.png)
 
-### 3. Well Pollution Analysis
+### 3. Well Pollution Status
 
-![Well Pollution Analysis](images/well_pollution_analysis.png)
+![Well Pollution Status](Maji_Ndogo_P2_Well_Pollution_Status.png)
 
 ### 4. Crime and Safety Analysis
 
-![Crime and Safety Analysis](images/crime_and_safety_analysis.png)
+![Crime and Safety Analysis](Maji_Ndogo_P2_Crime_and_Safety_Data.png)
+
 
 ## Key Learning Outcomes
 
