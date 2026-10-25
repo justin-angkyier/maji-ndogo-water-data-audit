@@ -46,17 +46,25 @@ The report contains four pages covering the following topics:
 
 ![Water Sources Overview](Maji_Ndogo_P2_Water_Sources_Overview.png)
 
+This dashboard page provides an overview of water sources and water-service access, helping readers explore the distribution of water sources across the areas covered by the dataset.
+
 ### 2. Queue Analysis
 
 ![Queue Analysis](Maji_Ndogo_P2_Queue_Analysis.png)
+
+This page explores water-collection queues and related demographic information, helping readers examine patterns in how people access water services.
 
 ### 3. Well Pollution Status
 
 ![Well Pollution Status](Maji_Ndogo_P2_Well_Pollution_Status.png)
 
+This page focuses on recorded well pollution status and water-quality concerns, supporting the exploration of potential environmental health risks.
+
 ### 4. Crime and Safety Analysis
 
 ![Crime and Safety Analysis](Maji_Ndogo_P2_Crime_and_Safety_Data.png)
+
+This page explores crime and safety information in the context of water access, helping readers investigate safety-related factors associated with collecting water.
 
 ## Key Skills and Learning Outcomes
 
