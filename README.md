@@ -58,12 +58,18 @@ The report contains four pages covering the following topics:
 
 ![Crime and Safety Analysis](Maji_Ndogo_P2_Crime_and_Safety_Data.png)
 
+## Key Skills and Learning Outcomes
 
-## Key Learning Outcomes
+End-to-End Data Analysis: Practised working across SQL-based database auditing and Power BI visualization to explore water-service data and communicate analytical findings.
 
-Through this project, I practised querying relational databases, investigating potential data-quality issues, filtering records, and presenting analysis through Power BI visualizations.
+1. Database Auditing and Data Quality (SQL): Gained hands-on experience querying the `md_water_services` database, reviewing the `Incorrect_records` table, investigating surveyor-related discrepancies, applying wildcard text searches using `LIKE '%cash%'`, and examining auditor scores alongside recorded water-source information.
 
-The project also helped me develop my ability to communicate analytical work through structured queries and visual reports.
+2. Interactive Data Visualization (Power BI): Developed a multi-page Power BI report covering Water Sources Overview, Queue Analysis, Well Pollution Status, and Crime and Safety Analysis. These report pages support the exploration of water access, collection queues, water-quality concerns, and safety-related information.
+
+3. Data Interpretation and Communication: Practised organizing analytical information into visual reports that help readers explore patterns related to water-service delivery, data quality, environmental health, and community safety.
+
+4. Transferable Skills: Applied analytical approaches relevant to healthcare data, including data-quality review, structured querying, identifying discrepancies, and presenting information to support evidence-based decision-making.
+
 
 ## Project Structure
 
