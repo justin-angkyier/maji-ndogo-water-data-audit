@@ -60,3 +60,26 @@ SELECT
     RANK() OVER (ORDER BY error_count DESC) AS error_rank
 FROM employee_errors
 ORDER BY error_count DESC;
+
+
+-- 6. Identify employees with above-average discrepancy counts
+
+WITH employee_errors AS (
+    SELECT
+        employee_name,
+        COUNT(*) AS error_count
+    FROM incorrect_records
+    GROUP BY employee_name
+),
+average_errors AS (
+    SELECT AVG(error_count) AS average_error_count
+    FROM employee_errors
+)
+SELECT
+    ee.employee_name,
+    ee.error_count,
+    ROUND(ae.average_error_count, 2) AS average_error_count
+FROM employee_errors AS ee
+CROSS JOIN average_errors AS ae
+WHERE ee.error_count > ae.average_error_count
+ORDER BY ee.error_count DESC;
