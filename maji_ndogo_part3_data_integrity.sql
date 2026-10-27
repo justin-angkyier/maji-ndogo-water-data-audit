@@ -42,3 +42,21 @@ WHERE LOWER(statements) LIKE '%cash%'
    OR LOWER(statements) LIKE '%corruption%'
 GROUP BY employee_name, statements
 ORDER BY flagged_records DESC;
+
+
+-- 5. Rank employees by the number of discrepancies
+-- Higher counts warrant further review but do not prove misconduct.
+
+WITH employee_errors AS (
+    SELECT
+        employee_name,
+        COUNT(*) AS error_count
+    FROM incorrect_records
+    GROUP BY employee_name
+)
+SELECT
+    employee_name,
+    error_count,
+    RANK() OVER (ORDER BY error_count DESC) AS error_rank
+FROM employee_errors
+ORDER BY error_count DESC;
