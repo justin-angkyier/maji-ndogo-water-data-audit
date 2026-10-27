@@ -27,3 +27,18 @@ SELECT
 FROM incorrect_records
 GROUP BY employee_name
 ORDER BY discrepancy_count DESC;
+
+-- 4. Search statements for possible corruption indicators
+-- These keywords flag records for further investigation;
+-- they do not prove wrongdoing.
+
+SELECT
+    employee_name,
+    statements,
+    COUNT(*) AS flagged_records
+FROM incorrect_records
+WHERE LOWER(statements) LIKE '%cash%'
+   OR LOWER(statements) LIKE '%bribe%'
+   OR LOWER(statements) LIKE '%corruption%'
+GROUP BY employee_name, statements
+ORDER BY flagged_records DESC;
