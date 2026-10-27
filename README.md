@@ -78,12 +78,14 @@ End-to-End Data Analysis: Practised working across SQL-based database auditing a
 
 4. Transferable Skills: Applied analytical approaches relevant to healthcare data, including data-quality review, structured querying, identifying discrepancies, and presenting information to support evidence-based decision-making.
 
-
 ## Project Structure
 
-- `sql/` — SQL scripts used for the analysis.
-- `images/` — Power BI dashboard screenshots.
-- `docs/` — supporting portfolio documentation.
+- `sql/` — SQL analysis scripts and SQL documentation.
+- `Maji_Ndogo_P2_Water_Sources_Overview.png` — Water Sources Overview dashboard screenshot.
+- `Maji_Ndogo_P2_Queue_Analysis.png` — Queue Analysis dashboard screenshot.
+- `Maji_Ndogo_P2_Well_Pollution_Status.png` — Well Pollution Status dashboard screenshot.
+- `Maji_Ndogo_P2_Crime_and_Safety_Data.png` — Crime and Safety Analysis dashboard screenshot.
+- `README.md` — Main project overview, objectives, tools, and dashboard documentation.
 
 ## Project Context
 
