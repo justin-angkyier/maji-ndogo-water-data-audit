@@ -103,3 +103,28 @@ SELECT
     ) AS percentage_of_discrepancies
 FROM employee_errors
 ORDER BY error_count DESC;
+
+
+-- 8. Compare corruption-related keyword matches by employee
+-- Note: Categories can overlap; keyword matches are not proof of misconduct.
+
+SELECT
+    employee_name,
+    SUM(CASE
+        WHEN LOWER(statements) LIKE '%cash%' THEN 1
+        ELSE 0
+    END) AS cash_mentions,
+    SUM(CASE
+        WHEN LOWER(statements) LIKE '%bribe%' THEN 1
+        ELSE 0
+    END) AS bribe_mentions,
+    SUM(CASE
+        WHEN LOWER(statements) LIKE '%corruption%' THEN 1
+        ELSE 0
+    END) AS corruption_mentions
+FROM incorrect_records
+WHERE LOWER(statements) LIKE '%cash%'
+   OR LOWER(statements) LIKE '%bribe%'
+   OR LOWER(statements) LIKE '%corruption%'
+GROUP BY employee_name
+ORDER BY cash_mentions DESC;
