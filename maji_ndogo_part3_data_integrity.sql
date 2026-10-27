@@ -83,3 +83,23 @@ FROM employee_errors AS ee
 CROSS JOIN average_errors AS ae
 WHERE ee.error_count > ae.average_error_count
 ORDER BY ee.error_count DESC;
+
+
+-- 7. Calculate each employee's percentage of all discrepancies
+
+WITH employee_errors AS (
+    SELECT
+        employee_name,
+        COUNT(*) AS error_count
+    FROM incorrect_records
+    GROUP BY employee_name
+)
+SELECT
+    employee_name,
+    error_count,
+    ROUND(
+        100.0 * error_count / SUM(error_count) OVER (),
+        2
+    ) AS percentage_of_discrepancies
+FROM employee_errors
+ORDER BY error_count DESC;
